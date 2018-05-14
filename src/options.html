@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>New Tab - Options</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/vendor/bootstrap-4.0.0.min.css">
+        <link rel="stylesheet" href="css/fonts/inconsolata.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="tab-container">
+          <div class="row">
+            <div class="col">
+              <div class="container">
+                <form>
+                  <div class="form-group">
+                    <div id="alert-success" class="alert alert-success fade d-none" role="alert">
+                      <strong>Nice work!</strong> <span id="success-message"></span>
+                    </div>
+                    <div id="alert-error" class="alert alert-danger fade d-none" role="alert">
+                      <strong>Oopsie Woopsy!</strong> <span id="error-message"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <h4 class="white">Trello Settings</h4>
+                  </div>
+                  <div class="form-group">
+                    <label class="white" for="trello-key">Trello Key</label>
+                    <input type="text" class="form-control grey-transparent-background" id="trello-key">
+                  </div>
+                  <div class="form-group">
+                    <label class="white" for="trello-token">Trello Key</label>
+                    <input type="text" class="form-control grey-transparent-background" id="trello-token">
+                  </div>
+                  <div class="form-group">
+                    <label class="white" for="trello-board-id">Trello Board Id</label>
+                    <input type="text" class="form-control grey-transparent-background" id="trello-board-id">
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="trello-card-descriptions">
+                    <label class="form-check-label" for="trello-card-descriptions">
+                      <span class="white">Show Card Descriptions</span>
+                    </label>
+                  </div>
+                  <hr>
+                  <div class="form-group">
+                    <h4 class="white">Product Hunt Settings</h44>
+                  </div>
+                  <div class="form-group">
+                    <label class="white" for="product-hunt-key">Product Hunt Key</label>
+                    <input type="text" class="form-control grey-transparent-background" id="product-hunt-key">
+                  </div>
+                  <div class="form-group">
+                    <button id="save-button" type="submit" class="btn float-right options-submit">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="js/vendor/jquery-ui.min.js"></script>
+        <script src="js/vendor/popper.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/feathericons.min.js"></script>
+        <script src="js/trello.js"></script>
+        <script src="js/options.js"></script>
+    </body>
+</html>

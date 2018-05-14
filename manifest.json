@@ -1,0 +1,17 @@
+{
+    "author": "Mike Solomon",
+    "name": "Custom New Tab",
+    "version": "0.1",
+    "manifest_version": 2,
+    "minimum_chrome_version": "29",
+    "description": "See the stuff I wanna see when I open a new tab",
+    "permissions" : ["storage", "management", "https://api.trello.com/*"],
+    "chrome_url_overrides" : {
+        "newtab": "src/index.html"
+    },
+    "options_page": "src/options.html",
+    "options_ui": {
+      "page": "src/options.html",
+      "chrome_style": true
+    }
+}
