@@ -72,7 +72,7 @@ var productHunt = {
   getPosts: function() {
     return new Promise(function(resolve, reject) {
       
-      phHelpers.makeProductHuntRequest('me/feed')
+      phHelpers.makeProductHuntRequest('posts')
       .then(response => {
         let posts = response.posts.slice(0,phHelpers.lastPostIndex-1)
         
